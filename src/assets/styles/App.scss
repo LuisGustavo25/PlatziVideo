@@ -1,6 +1,36 @@
-body{
+@import "./Vars.scss";
+@import "./components/Media.scss";
 
+body{
+    font-family: 'Muli', sans-serif;
     margin: 0 auto;
-    background: #171717;
-    color:aqua; 
+    background-color: $background-theme;
+    color: $font-color;
 }
+* {
+    box-sizing: border-box;
+  }
+     
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .carousel-item {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 450ms all;
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+  }
+  
+  .carousel-item:hover ~ .carousel-item {
+    -webkit-transform: translate3d(100px, 0, 0);
+            transform: translate3d(100px, 0, 0);
+  }

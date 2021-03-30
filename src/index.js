@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Muestra from './components/Muestra';
+import App from './containers/App';
 
-ReactDOM.render(<Muestra></Muestra>, document.getElementById('app'));
+ReactDOM.render(<App/>, document.getElementById('app'));
 
 
